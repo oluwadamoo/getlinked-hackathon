@@ -2,123 +2,9 @@
 import { Link, useNavigate } from 'react-router-dom'
 import Logo from '../../components/Logo'
 import RegisterButton from '../../components/RegisterButton'
+import { JUDGING_CRITERIA, FAQ, TIMELINES, REWARDS, PARTNERS, LICENSING_POLICY } from '../../constants/data';
 
-const JUDGING_CRITERIA = [
-    {
-        title: "Innovation and Creativity",
-        details: "Evaluate the uniqueness and creativity of the solution. Consider whether it addresses a real-world problem in a novel way or introduces innovative features."
-    },
-    {
-        title: "Functionality",
-        details: "Assess how well the solution works. Does it perform its intended functions effectively and without major issues? Judges would consider the completeness and robustness of the solution."
-    },
-    {
-        title: "Impact and Relevance",
-        details: "Determine the potential impact of the solution in the real world. Does it address a significant problem, and is it relevant to the target audience? Judges would assess the potential social, economic, or environmental benefits."
-    },
-    {
-        title: "Technical Complexity",
-        details: "Evaluate the technical sophistication of the solution. Judges would consider the complexity of the code, the use of advanced technologies or algorithms, and the scalability of the solution."
-    },
-    {
-        title: "Adherence to Hackathon Rules",
-        details: "Judges will Ensure that the team adhered to the rules and guidelines of the hackathon, including deadlines, use of specific technologies or APIs, and any other competition-specific requirements."
-    },
-]
 
-const FAQ = [
-    {
-        question: "Can I work on a project I started before the hackathon?",
-        answer: ''
-    },
-    {
-        question: "What happens if I need help during the hackathon?",
-        answer: ''
-    },
-    {
-        question: "What happens if I don't have an idea for a project?",
-        answer: ''
-    },
-    {
-        question: "Can I join a team or do I have to come with one?",
-        answer: ''
-    },
-    {
-        question: "What happens after the hackathon ends",
-        answer: ''
-    },
-    {
-        question: "Can I work on a project I started before the hackathon?",
-        answer: ''
-    },
-]
-
-const TIMELINES = [
-    {
-        event: 'Hackathon Announcement',
-        details: 'The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register',
-        date: 'November 18, 2023'
-    },
-    {
-        event: 'Teams Registration begins',
-        details: 'Interested teams can now show their interest in the getlinked tech hackathon 1.0 2023 by proceeding to register',
-        date: 'November 18, 2023'
-    },
-    {
-        event: 'Teams Registration ends',
-        details: 'Interested Participants are no longer Allowed to register',
-        date: 'November 18, 2023'
-    },
-    {
-        event: 'Announcement of the accepted teams and ideas',
-        details: 'All teams whom idea has been accepted into getlinked tech hackathon 1.0 2023 are formally announced',
-        date: 'November 18, 2023'
-    },
-    {
-        event: 'Getlinked Hackathon 1.0 Offically Begins',
-        details: 'Accepted teams can now proceed to build their ground breaking skill driven solutions',
-        date: 'November 18, 2023'
-    },
-    {
-        event: 'Demo Day',
-        details: 'Teams get the opportunity to pitch their projects to judges. The winner of the hackathon will also be announced on this day',
-        date: 'November 18, 2023'
-    },
-]
-
-const REWARDS = [
-    {
-        position: '2nd',
-        reward: 'N300,000',
-        icon: '/assets/images/silver-medal.svg'
-    },
-    {
-        position: '1st',
-        reward: 'N400,000',
-        icon: '/assets/images/gold-medal.svg'
-
-    },
-    {
-        position: '3rd',
-        reward: 'N150,000',
-        icon: '/assets/images/bronze-medal.svg'
-
-    },
-]
-
-const PARTNERS = [
-    '/assets/images/liberty-assured.svg',
-    '/assets/images/liberty-pay.svg',
-    '/assets/images/winwise.svg',
-    '/assets/images/whispersms.svg',
-    '/assets/images/paybox.svg',
-    '/assets/images/vuzualplus.svg',
-
-]
-const LICENSING_POLICY = [
-    'The Standard License grants you a non-exclusive right to navigate and register for our event',
-    'You are licensed to use the item available at any free source sites, for your project developement'
-]
 interface AwardCardProps {
     extraClass?: string;
     containerClass?: string;
@@ -130,7 +16,7 @@ interface AwardCardProps {
 }
 const AwardCard = ({ rewardTextClass, extraClass, containerClass, position, reward, icon }: AwardCardProps) => (
     <div className={`flex flex-col items-center ${containerClass}`}>
-        <img alt='award' src={icon} className={`z-[10] ${position === '1st' ? 'max-[620px]:max-w-[125px]' : 'max-[620px]:max-w-[75px]'}`} />
+        <img alt='award' src={icon} className={`z-[10] ${position === '1st' ? 'max-[620px]:max-w-[125px]' : 'max-[620px]:max-w-[75px]'}`} loading='lazy' />
         <div className={`rounded-[8px] sm:pt-[111px] pt-[60px] sm:mt-[-100px] mt-[-50px] flex flex-col items-center pb-[33px] sm:px-[25px] px-[9px] text-center bg-[#D434FE1F] border-[1px] border-[#D434FE] ${extraClass}`}>
 
             <h3 className='sm:text-[36px] text-[12px] leading-[216.4%] text-[#fff] font-[700]'>{position}</h3>
@@ -147,9 +33,9 @@ function Home() {
         <div className='overflow-x-hidden overflow-y-scroll min-h-[calc(100vh-100px)] relative  pt-[32px]'>
 
             <div className='pl-[8.47%] pr-[3.64%] relative'>
-                <section className='z-[10] relative'>
+                <section className='z-[10] relative max-[620px]:w-fit'>
                     <h3 className='italic text-[#fff] sm:text-[36px] text-[16px] font-[700] sm:text-right '>Igniting a Revolution in HR Innovation</h3>
-                    <img src='/assets/images/arc.svg' alt='arc' className='absolute sm:right-0 right-[10%] max-[620px]:max-w-[115px] ' />
+                    <img src='/assets/images/arc.svg' alt='arc' className='absolute right-0 max-[620px]:max-w-[115px] ' loading='lazy' />
                 </section>
 
                 <section className='flex mt-[40px] sm:flex-row flex-col'>
@@ -164,8 +50,8 @@ function Home() {
                             <h2 className='text-[#D434FE]'>
                                 1.0
                             </h2>
-                            <img alt='chain' src='/assets/images/chain.svg' className='ml-[6px] max-[620px]:max-w-[32.797px]' />
-                            <img alt='fire' src='/assets/images/fire.svg' className='max-[620px]:max-w-[22.119px]' />
+                            <img alt='chain' src='/assets/images/chain.svg' className='ml-[6px] max-[620px]:max-w-[32.797px]' loading='lazy' />
+                            <img alt='fire' src='/assets/images/fire.svg' className='max-[620px]:max-w-[22.119px]' loading='lazy' />
                         </div>
                         <p className='mt-[8px] sm:text-[20px] text-[13px] max-[620px]:text-center max-w-[522px] mb-[41px]'>
                             Participate in getlinked tech Hackathon 2023 stand
@@ -185,16 +71,16 @@ function Home() {
                         </div>
                     </div>
                     <div className='sm:absolute z-[4] flex-1 right-0 sm:mt-[0px] mt-[16.84px]'>
-                        <img src='/assets/images/smart-glasses-guy.svg' alt='man-in-glasses' className='sm:min-w-[740px] absolute right-[0]' />
-                        <img src='/assets/images/light.svg' alt='3d' className='z-[10] absolute sm:min-w-[660px] right-0' />
+                        <img src='/assets/images/smart-glasses-guy.svg' alt='man-in-glasses' className='sm:min-w-[740px] absolute right-[0]' loading='lazy' />
+                        <img src='/assets/images/light.svg' alt='3d' className='z-[10] absolute sm:min-w-[660px] right-0' loading='lazy' />
 
                     </div>
                 </section>
             </div>
             <section className='pt-[62px] pb-[78px] sm:pl-[8.47%] sm:pr-[3.64%] max-[620px]:px-[8.47%] border-[1px] border-[#FFFFFF2E] sm:mt-[91px] mt-[400px] flex sm:flex-row flex-col justify-between items-center'>
                 <div className='relative'>
-                    <img alt='light-bulb' src='/assets/images/big-idea.svg' className='sm:min-w-[490px]' />
-                    <img alt='arrow' src='/assets/images/curled-arrow.svg' className='absolute bottom-0 right-0' />
+                    <img alt='light-bulb' src='/assets/images/big-idea.svg' className='sm:min-w-[490px]' loading='lazy' />
+                    <img alt='arrow' src='/assets/images/curled-arrow.svg' className='absolute bottom-0 right-0' loading='lazy' />
 
                 </div>
 
@@ -205,7 +91,7 @@ function Home() {
                             <h5 className='text-[#D434FE]'>tech Hackathon 1.0</h5>
                         </div>
 
-                        <img alt='star' src='/assets/images/purple-star.svg' className='ml-[90px] max-[620px]:hidden' />
+                        <img alt='star' src='/assets/images/purple-star.svg' className='ml-[90px] max-[620px]:hidden' loading='lazy' />
                     </div>
                     <p className='mt-[18px] sm:text-[14px] text-[13px] max-[620px]:text-center'>
                         Our tech hackathon is a melting pot of visionaries, and its purpose is as
@@ -228,7 +114,7 @@ function Home() {
                             <h5 className='text-[#D434FE]'>Guidelines</h5>
                         </div>
 
-                        <img alt='star' src='/assets/images/gray-star.svg' className='ml-[90px] mt-[-100px] max-[620px]:hidden' />
+                        <img alt='star' src='/assets/images/gray-star.svg' className='ml-[90px] mt-[-100px] max-[620px]:hidden' loading='lazy' />
                     </div>
                     <p className='mt-[18px] sm:text-[14px] text-[13px] max-[620px]:text-center'>
                         Our tech hackathon is a melting pot of visionaries, and its purpose is as
@@ -250,7 +136,7 @@ function Home() {
             {/* Judging criteria */}
             <section className=' pt-[62px] pb-[78px]  sm:pl-[8.47%] sm:pr-[3.64%] max-[620px]:px-[8.47%]  border-b-[1px] border-b-[#FFFFFF2E] flex sm:flex-row flex-col justify-between items-center'>
                 <div className='relative'>
-                    <img alt='observer' src='/assets/images/observer.svg' className='sm:min-w-[680px]' />
+                    <img alt='observer' src='/assets/images/observer.svg' className='sm:min-w-[680px]' loading='lazy' />
 
                 </div>
 
@@ -261,7 +147,7 @@ function Home() {
                             <h5 className='text-[#D434FE]'>Key attributes</h5>
                         </div>
 
-                        <img alt='star' src='/assets/images/purple-star.svg' className='ml-[90px] max-[620px]:hidden' />
+                        <img alt='star' src='/assets/images/purple-star.svg' className='ml-[90px] max-[620px]:hidden' loading='lazy' />
                     </div>
 
                     {
@@ -289,7 +175,7 @@ function Home() {
                             <p className='text-[#FFF] text-[14px] mt-[16px] font-[400]'>We got answers to the questions that you might want to ask about <b>getlinked Hackathon 1.0</b></p>
                         </div>
 
-                        <img alt='star' src='/assets/images/gray-star.svg' className='ml-[90px] mt-[-100px] max-[620px]:hidden' />
+                        <img alt='star' src='/assets/images/gray-star.svg' className='ml-[90px] mt-[-100px] max-[620px]:hidden' loading='lazy' />
                     </div>
 
 
@@ -306,7 +192,7 @@ function Home() {
                 </div>
 
                 <div className='sm:absolute right-0'>
-                    <img alt='questioning' src='/assets/images/thinking.svg' className='sm:min-w-[600px]' />
+                    <img alt='questioning' src='/assets/images/thinking.svg' className='sm:min-w-[600px]' loading='lazy' />
 
                 </div>
 
@@ -364,7 +250,7 @@ function Home() {
 
 
                 <div className='flex justify-between sm:flex-row flex-col'>
-                    <img alt='reward-cup' src='/assets/images/cup.svg' />
+                    <img alt='reward-cup' src='/assets/images/cup.svg' loading='lazy' />
                     <div className='flex  max-[620px]:mt-[190px] max-[620px]:justify-center'>
                         {
                             REWARDS.map(({ position, icon, reward }, index) => (
@@ -393,7 +279,7 @@ function Home() {
                         {
                             PARTNERS.map((partner, index) => (
                                 <div key={index} className={`flex sm:py-[22.79px] py-[10px] max-[620px]:px-[10px] sm:w-[316.868px] max-w-[250px] relative items-center justify-center ${index === 1 ? 'sm:border-l-[4px] border-l-[2px] sm:border-r-[4px] border-r-[2px] sm:border-b-[4px] border-b-[2px] border-b-[#D434FE] border-r-[#D434FE] border-l-[#D434FE]' : index === 4 ? 'sm:border-l-[4px] sm:border-r-[4px] border-l-[2px] border-r-[2px]  border-r-[#D434FE] border-l-[#D434FE]' : index === 0 || index === 2 ? 'border-b-[2px] sm:border-b-[4px] border-b-[#D434FE]' : ''}`}>
-                                    <img alt='partner' key={index} src={partner} className='max-[620px]:max-w-[60px]' />
+                                    <img alt='partner' key={index} src={partner} className='max-[620px]:max-w-[60px]' loading='lazy' />
                                     {(index === 0 || index === 1) && <div className={`z-[20]  sm:top-[82%] top-[90%] right-[-10%] absolute rotate-[45deg] sm:w-[59.55px] w-[15px] h-[15px] sm:h-[59.55px] bg-[#150E28] flex item-center justify-center`}>
                                         <div className={`z-[20] w-[15px] h-[15px]  sm:w-[59.55px] sm:h-[59.55px] bg-[#FFFFFF03]`} />
 
@@ -421,7 +307,7 @@ function Home() {
                                 it’s our aim to always take of our participant</p>
                         </div>
 
-                        <img alt='star' src='/assets/images/gray-star.svg' className='ml-[90px] mt-[-100px] max-[620px]:hidden' />
+                        <img alt='star' src='/assets/images/gray-star.svg' className='ml-[90px] mt-[-100px] max-[620px]:hidden' loading='lazy' />
                     </div>
 
                     <div className='max-[620px]:text-[12px] rounded-[5px] mt-[69px] py-[59px] sm:px-[72px] px-[15px] border-[1px] border-[#D434FE] bg-[#D9D9D908]'>
@@ -440,7 +326,7 @@ function Home() {
                             {
                                 LICENSING_POLICY.map((policy, index) => (
                                     <div className='flex mb-[18px]' key={index}>
-                                        <img alt='list-icon' src='/assets/images/list-icon.svg' />
+                                        <img alt='list-icon' src='/assets/images/list-icon.svg' loading='lazy' />
                                         <p className='ml-[14px]'>{policy}</p>
                                     </div>
                                 ))
@@ -494,7 +380,7 @@ function Home() {
                             <p>Follow us</p>
                             {['/assets/images/instagram.svg', '/assets/images/x.com.svg', '/assets/images/facebook.svg', '/assets/images/linkedin.svg'].map((social, index) => (
                                 <a href='/#' key={index} className='ml-[16px]'>
-                                    <img alt='social' src={social} />
+                                    <img alt='social' src={social} loading='lazy' />
                                 </a>
                             ))}
 
@@ -510,7 +396,7 @@ function Home() {
                             <p className='text-[12px] ml-[16px]'>+234 6707653444</p>
                         </div>
                         <div className='flex mt-[22px]'>
-                            <img alt='address' src='/assets/images/location.svg' />
+                            <img alt='address' src='/assets/images/location.svg' loading='lazy' />
                             <p className='text-[12px] ml-[16px] max-w-[89px]'>27,Alara Street
                                 Yaba 100012
                                 Lagos State</p>

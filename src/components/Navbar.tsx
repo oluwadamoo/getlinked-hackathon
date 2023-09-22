@@ -1,21 +1,26 @@
-import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import React, { useEffect, useRef, useState } from 'react'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import RegisterButton from './RegisterButton'
 import Logo from './Logo'
 
 function Navbar() {
+    const navigate = useNavigate()
+
+    const navRef = useRef<HTMLElement>(null)
+    const [showMenu, setShowMenu] = useState(false)
+
     const NAVITEMS = [
         {
             title: "Timeline",
-            url: '#'
+            url: '/#'
         },
         {
             title: "Overview",
-            url: '#'
+            url: '/#'
         },
         {
             title: "FAQs",
-            url: '#'
+            url: '/#'
         },
         {
             title: "Contact",
@@ -23,18 +28,44 @@ function Navbar() {
         },
     ]
 
-    const [showMenu, setShowMenu] = useState(false)
+    useEffect(() => {
+        function onScroll() {
+            const scrollY = window.scrollY;
+            const triggerPoint = 200;
 
-    const navigate = useNavigate()
+            if (navRef.current) {
+                if (scrollY > triggerPoint) {
+                    navRef.current!.style.background = 'rgba(21, 14, 40, 0.767)';
+                } else {
+                    navRef.current!.style.background = 'transparent'
+                }
+            }
+
+        }
+        window.addEventListener('scroll', onScroll)
+
+
+        return () => {
+            window.removeEventListener('scroll', onScroll)
+        }
+    }, [])
+
+    const location = useLocation()
+
+    useEffect(() => {
+        setShowMenu(false)
+    }, [location])
+
+
     return (
-        <nav className='z-[10000000000] relative px-[8.47%] border-b-[1px] border-b-[#FFFFFF2E] pt-[4.43%] pb-[1.98%] flex items-center justify-between'>
+        <nav ref={navRef} className='navbar z-[100] fixed top-0 left-0 right-0 w-[100%] px-[8.47%] border-b-[1px] border-b-[#FFFFFF2E] pt-[4.43%] pb-[1.98%] flex items-center justify-between'>
             {/* Logo */}
-            <Logo />
+            <Logo onClick={() => navigate('/')} />
             {/* Nav Items */}
             <section className='flex items-center flex-1 justify-between max-[620px]:hidden'>
                 <ul className='flex items-center mr-[100px]'>
                     {NAVITEMS.map(({ title, url }, index) => (
-                        <li className={`text-[16px] text-[#fff] ${index > 0 ? 'ml-[56px]' : ''}`} key={index}>
+                        <li className={`${location.pathname === url ? 'line' : ''} text-[16px] text-[#fff] ${index > 0 ? 'ml-[56px]' : ''}`} key={index}>
                             <Link to={url}>
                                 {title}
                             </Link>
