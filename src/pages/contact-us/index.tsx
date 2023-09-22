@@ -2,6 +2,7 @@ import React, { FormEvent, useState } from 'react'
 import RegisterButton from '../../components/RegisterButton'
 import axios from 'axios'
 import { toast } from 'react-toastify'
+import { Slide } from 'react-awesome-reveal'
 
 function ContactUs() {
     const [isSubmitting, setIsSubmitting] = useState(false)
@@ -15,14 +16,13 @@ function ContactUs() {
         setIsSubmitting(true)
 
         try {
-            const res = await axios.post('contact-form', {
+            await axios.post('contact-form', {
                 email,
                 phone_number,
                 first_name,
                 message
             })
 
-            console.log(res, "RESPON")
             toast.success("Message sent successfully!")
             setIsSubmitting(false)
 
@@ -38,33 +38,35 @@ function ContactUs() {
     return (
         <div className='px-[8.47%] overflow-x-hidden overflow-y-scroll min-h-[calc(100vh-100px)] z-[10] relative  sm:py-[140px] py-[100px]'>
             <div className='flex text-[#fff] text-[16px] justify-between'>
-                <div className='max-[620px]:hidden'>
-                    <h3 className='clash-text text-[32px] font-[700] text-[#D434FE]'>Get in touch</h3>
+                <Slide direction='down'>
+                    <div className='max-[620px]:hidden'>
+                        <h3 className='clash-text text-[32px] font-[700] text-[#D434FE]'>Get in touch</h3>
 
-                    <p className='my-[17px]'>Contact Information</p>
-                    <p className='mb-[17px]'>27,Alara Street
-                        Yaba 100012
-                        Lagos State</p>
-                    <p className='mb-[17px]'>
-                        Call Us : 07067981819
-                    </p>
+                        <p className='my-[17px]'>Contact Information</p>
+                        <p className='mb-[17px]'>27,Alara Street
+                            Yaba 100012
+                            Lagos State</p>
+                        <p className='mb-[17px]'>
+                            Call Us : 07067981819
+                        </p>
 
-                    <p className='mb-[17px]'>
-                        we are open from Monday-Friday
-                        08:00am - 05:00pm
-                    </p>
+                        <p className='mb-[17px]'>
+                            we are open from Monday-Friday
+                            08:00am - 05:00pm
+                        </p>
 
-                    <p className='text-[16px] text-[#D434FE] mb-[14px]'>Share on</p>
-                    <div className='flex items-center'>
+                        <p className='text-[16px] text-[#D434FE] mb-[14px]'>Share on</p>
+                        <div className='flex items-center'>
 
-                        {['/assets/images/instagram.svg', '/assets/images/x.com.svg', '/assets/images/facebook.svg', '/assets/images/linkedin.svg'].map((social, index) => (
-                            <a href='/#' key={index} className='mr-[16px]'>
-                                <img alt='social' src={social} />
-                            </a>
-                        ))}
+                            {['/assets/images/instagram.svg', '/assets/images/x.com.svg', '/assets/images/facebook.svg', '/assets/images/linkedin.svg'].map((social, index) => (
+                                <a href='/#' key={index} className='mr-[16px]'>
+                                    <img alt='social' src={social} />
+                                </a>
+                            ))}
 
+                        </div>
                     </div>
-                </div>
+                </Slide>
 
                 {/* FORM */}
                 <form onSubmit={onSubmit} className='form z-[10] relative sm:py-[75px] sm:px-[92px] flex flex-col sm:w-[617px] w-[100%]'>

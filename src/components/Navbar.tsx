@@ -12,15 +12,15 @@ function Navbar() {
     const NAVITEMS = [
         {
             title: "Timeline",
-            url: '/#'
+            url: '/#timeline'
         },
         {
             title: "Overview",
-            url: '/#'
+            url: '/#overview'
         },
         {
             title: "FAQs",
-            url: '/#'
+            url: '/#faq'
         },
         {
             title: "Contact",
@@ -65,10 +65,13 @@ function Navbar() {
             <section className='flex items-center flex-1 justify-between max-[620px]:hidden'>
                 <ul className='flex items-center mr-[100px]'>
                     {NAVITEMS.map(({ title, url }, index) => (
-                        <li className={`${location.pathname === url ? 'line' : ''} text-[16px] text-[#fff] ${index > 0 ? 'ml-[56px]' : ''}`} key={index}>
-                            <Link to={url}>
+                        <li className={`${location.pathname === url || location.hash.includes(url.replaceAll('/', '')) ? 'line' : ''} text-[16px] text-[#fff] ${index > 0 ? 'ml-[56px]' : ''}`} key={index}>
+                            {url.includes("#") ? <a href={url}>
                                 {title}
-                            </Link>
+                            </a> :
+                                <Link to={url}>
+                                    {title}
+                                </Link>}
                         </li>
                     ))}
                 </ul>

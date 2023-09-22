@@ -37,11 +37,11 @@ a:hover {
   position: relative;
   font-weight: 600;
   padding-bottom: 2px;
-  animation: changeWeight 0.3s linear;
+  animation: change-weight 0.3s linear;
 }
 
 
-@keyframes changeWeight {
+@keyframes change-weight {
   from {
     font-weight: 400;
   }
@@ -229,5 +229,35 @@ select {
     text-shadow:
       .25em 0 0 #FFF,
       .5em 0 0 #FFF;
+  }
+}
+
+.light {
+  animation: rotate 15s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  22.5% {
+    transform: rotate(90deg);
+  }
+
+  45% {
+    transform: rotate(180deg);
+  }
+
+  67.5% {
+    transform: rotate(270deg);
+  }
+
+  90% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }

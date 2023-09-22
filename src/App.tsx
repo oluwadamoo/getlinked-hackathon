@@ -10,6 +10,7 @@ import axios from 'axios';
 import { BASEURL } from './constants/api';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import Overview from './pages/overview';
 
 function App() {
 
@@ -78,6 +79,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/register' element={<Register />} />
           <Route path='/contact' element={<ContactUs />} />
+          <Route path='/overview' element={<Overview />} />
           <Route path='*' element={<Blank />} />
         </Routes>
 
