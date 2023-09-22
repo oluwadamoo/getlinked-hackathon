@@ -87,7 +87,9 @@ function Home() {
                 <section className='flex mt-[40px] sm:flex-row flex-col relative z-[6]'>
 
                     <div className='text-[#fff] relative z-[5] flex-1 max-[620px]:flex max-[620px]:flex-col max-[620px]:items-center'>
-                        <div className='flex justify-end w-[42%] mb-[-25px]'><img alt='bulb' src='/assets/images/yellow-bulb.svg' /></div>
+                        <div className='flex justify-end w-[42%] sm:mb-[-25px] mb-[-20px]'>
+                            <img alt='bulb' src='/assets/images/yellow-bulb.svg' className='max-w-[53px] max-w-[16px]' />
+                        </div>
                         <h2 className='clash-text font-[700] sm:text-[80px] text-[32px] sm:text-left text-center'>
                             getlinked Tech
                         </h2>
