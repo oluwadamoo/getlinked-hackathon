@@ -121,19 +121,19 @@ function Home() {
                         </div>
                     </div>
                     <div className='sm:absolute z-[4] flex-1 right-0 sm:mt-[0px] mt-[16.84px]'>
-                        <img src='/assets/images/smart-glasses-guy.svg' alt='man-in-glasses' className='sm:min-w-[740px] absolute right-[0]' loading='lazy' />
-                        <img src='/assets/images/light.svg' alt='3d' className='light z-[10] absolute sm:min-w-[660px] right-0' loading='lazy' />
+                        <img src='/assets/images/smart-glasses-guy.png' alt='man-in-glasses' className='sm:max-w-[740px] absolute right-[0]' loading='lazy' />
+                        <img src='/assets/images/light.png' alt='3d' className='light z-[10] absolute sm:min-w-[660px] right-0' loading='lazy' />
 
                     </div>
 
-                    <img alt='star' src='/assets/images/white-star.svg' className='absolute  top-[-10%] left-0 sm:max-w-[21px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/gray-star.svg' className='absolute  top-[0] left-[45%] sm:max-w-[21px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/gray-star.svg' className='absolute  bottom-[15%] left-[35%] sm:max-w-[21px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/white-star.svg' className='absolute star  top-[-10%] left-0 sm:max-w-[21px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/gray-star.svg' className='absolute star  top-[0] left-[45%] sm:max-w-[21px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/gray-star.svg' className='absolute star  bottom-[15%] left-[35%] sm:max-w-[21px] max-w-[12px]' />
                 </section>
             </div>
             <section className=' z-[5] pt-[62px] pb-[78px] sm:pl-[8.47%] sm:pr-[3.64%] max-[620px]:px-[8.47%] border-[1px] border-[#FFFFFF2E] sm:mt-[91px] mt-[400px] flex sm:flex-row flex-col justify-between items-center relative'>
                 <div className='relative'>
-                    <img alt='light-bulb' src='/assets/images/big-idea.svg' className='sm:min-w-[490px]' loading='lazy' />
+                    <img alt='light-bulb' src='/assets/images/big-idea.png' className='sm:max-w-[490px]' loading='lazy' />
                     <img alt='arrow' src='/assets/images/curled-arrow.svg' className='absolute bottom-0 right-0' loading='lazy' />
 
                 </div>
@@ -145,7 +145,7 @@ function Home() {
                             <h5 className='text-[#D434FE]'>tech Hackathon 1.0</h5>
                         </div>
 
-                        <img alt='star' src='/assets/images/purple-star.svg' className='ml-[90px] max-[620px]:hidden' loading='lazy' />
+                        <img alt='star' src='/assets/images/purple-star.svg' className='star ml-[90px] max-[620px]:hidden' loading='lazy' />
                     </div>
                     <p className='mt-[18px] sm:text-[14px] text-[13px] max-[620px]:text-center'>
                         Our tech hackathon is a melting pot of visionaries, and its purpose is as
@@ -157,8 +157,8 @@ function Home() {
                     </p>
                 </div>
 
-                <img alt='star' src='/assets/images/purple-star.svg' className='absolute  top-[30%] left-[8%] sm:max-w-[18px] max-w-[12px]' />
-                <img alt='star' src='/assets/images/purple-star.svg' className='absolute  bottom-[15%] left-[35%] sm:max-w-[21px] max-w-[12px]' />
+                <img alt='star' src='/assets/images/purple-star.svg' className='star absolute  top-[30%] left-[8%] sm:max-w-[18px] max-w-[12px]' />
+                <img alt='star' src='/assets/images/purple-star.svg' className='star absolute  bottom-[15%] left-[35%] sm:max-w-[21px] max-w-[12px]' />
 
             </section>
 
@@ -185,13 +185,13 @@ function Home() {
                     </div>
 
                     <div className='sm:absolute right-0'>
-                        <img alt='girl-sitting' src='/assets/images/lady-sitting.svg' className='sm:min-w-[600px]' />
+                        <img alt='girl-sitting' src='/assets/images/lady-sitting.png' className='sm:max-w-[600px]' />
 
                     </div>
 
 
-                    <img alt='star' src='/assets/images/gray-star.svg' className='absolute  top-[25%] left-[25%] sm:max-w-[21px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/white-star.svg' className='absolute  bottom-[25%] left-[45%] sm:max-w-[21px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/gray-star.svg' className='absolute star  top-[25%] left-[25%] sm:max-w-[21px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/white-star.svg' className='absolute star  bottom-[25%] left-[45%] sm:max-w-[21px] max-w-[12px]' />
 
                 </section>
             </Fade>
@@ -200,7 +200,8 @@ function Home() {
             <Fade duration={1000}>
                 <section className='relative pt-[62px] pb-[78px]  sm:pl-[8.47%] sm:pr-[3.64%] max-[620px]:px-[8.47%]  border-b-[1px] border-b-[#FFFFFF2E] flex sm:flex-row flex-col justify-between items-center'>
                     <div className='relative'>
-                        <img alt='observer' src='/assets/images/observer.svg' className='sm:min-w-[680px]' loading='lazy' />
+                        <img alt='elipsis' src='/assets/images/ellipse.svg' className='absolute left-[100px]  z-[-1] max-[620px]:hidden' />
+                        <img alt='observer' src='/assets/images/observer.png' className='sm:max-w-[680px] ' loading='lazy' />
 
                     </div>
 
@@ -226,9 +227,9 @@ function Home() {
 
                     </div>
 
-                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute  top-[10%] left-[20%] sm:max-w-[18px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/gray-star.svg' className='absolute  bottom-[50%] left-[35%] sm:max-w-[18px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/white-star.svg' className='absolute  bottom-[15%] left-[45%] sm:max-w-[18px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/purple-star.svg' className='star absolute  top-[10%] left-[20%] sm:max-w-[18px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/gray-star.svg' className='star absolute  bottom-[50%] left-[35%] sm:max-w-[18px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/white-star.svg' className='star absolute  bottom-[15%] left-[45%] sm:max-w-[18px] max-w-[12px]' />
 
                 </section>
             </Fade>
@@ -275,19 +276,19 @@ function Home() {
                         </div>
                     </div>
 
-                    <div className='sm:absolute top-[5%] right-0 z-[10]'>
-                        <img alt='questioning' src='/assets/images/thinking.svg' className='sm:min-w-[600px]' loading='lazy' />
+                    <div className='sm:absolute top-[5%] right-0 z-[10] max-[620px]:mt-[100px]'>
+                        <img alt='questioning' src='/assets/images/thinking.png' className='sm:max-w-[600px]' loading='lazy' />
 
                     </div>
 
-                    <img alt='question' src='/assets/images/question2.svg' className='absolute  sm:top-[10%] bottom-[44%] sm:right-[23%] right-[43%] sm:max-w-[21px] max-w-[12px]' />
-                    <img alt='question' src='/assets/images/question1.svg' className='absolute  sm:top-[4%]  bottom-[46%] sm:right-[30%] right-[50%] sm:max-w-[21px] max-w-[12px]' />
-                    <img alt='question' src='/assets/images/question2.svg' className='absolute  sm:top-[10%] bottom-[44%] sm:right-[37%] right-[57%] sm:max-w-[21px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute  top-[4%] left-[5%] sm:max-w-[21px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/gray-star.svg' className='absolute  top-[50%] left-[45%] sm:max-w-[21px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/white-star.svg' className='absolute  bottom-[5%] right-[5%] sm:max-w-[18px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute  top-[25%] left-[55%] sm:max-w-[18px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute  top-[10%] left-[72%] sm:max-w-[18px] max-w-[12px]' />
+                    <img alt='question' src='/assets/images/question2.svg' className='absolute  sm:top-[10%] bottom-[44%] sm:right-[20%] right-[43%] sm:max-w-[21px] max-w-[12px]' />
+                    <img alt='question' src='/assets/images/question1.svg' className='absolute  sm:top-[4%]  bottom-[46%] sm:right-[27%] right-[50%] sm:max-w-[21px] max-w-[12px]' />
+                    <img alt='question' src='/assets/images/question2.svg' className='absolute  sm:top-[10%] bottom-[44%] sm:right-[33%] right-[57%] sm:max-w-[21px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute star  top-[4%] left-[5%] sm:max-w-[21px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/gray-star.svg' className='absolute star  top-[50%] left-[45%] sm:max-w-[21px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/white-star.svg' className='absolute star  bottom-[5%] right-[5%] sm:max-w-[18px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute star  top-[25%] left-[55%] sm:max-w-[18px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute star  top-[10%] left-[72%] sm:max-w-[18px] max-w-[12px]' />
 
 
                 </section>
@@ -295,7 +296,6 @@ function Home() {
 
             {/* Timeline */}
             <div id='timeline' />
-
             <Fade duration={2000}>
                 <section id='timeline' className=' relative pt-[62px] pb-[78px]  sm:pl-[8.47%] sm:pr-[3.64%] max-[620px]:px-[8.47%]  border-b-[1px] border-b-[#FFFFFF2E]  justify-between items-center'>
                     <div className='text-[#fff] text-center flex flex-col items-center'>
@@ -332,9 +332,9 @@ function Home() {
 
                     </div>
 
-                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute  top-[10%] left-[15%] sm:max-w-[21px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/white-star.svg' className='absolute  top-[45%] right-[20%] sm:max-w-[21px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/gray-star.svg' className='absolute  bottom-[8%] left-[7%] sm:max-w-[18px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute star  top-[10%] left-[15%] sm:max-w-[21px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/white-star.svg' className='absolute star  top-[45%] right-[20%] sm:max-w-[21px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/gray-star.svg' className='absolute star  bottom-[8%] left-[7%] sm:max-w-[18px] max-w-[12px]' />
 
                 </section>
             </Fade>
@@ -355,7 +355,7 @@ function Home() {
 
                     <Slide direction='left'>
                         <div className='flex justify-between sm:flex-row flex-col'>
-                            <img alt='reward-cup' src='/assets/images/cup.svg' loading='lazy' />
+                            <img alt='reward-cup' src='/assets/images/cup.png' loading='lazy' className='sm:max-w-[548px]' />
                             <div className='flex  max-[620px]:mt-[190px] max-[620px]:justify-center'>
                                 {
                                     REWARDS.map(({ position, icon, reward }, index) => (
@@ -367,11 +367,11 @@ function Home() {
                         </div>
                     </Slide>
 
-                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute  top-[5%] left-[15%] sm:max-w-[18px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/white-star.svg' className='absolute  top-[45%] left-[45%] sm:max-w-[21px] max-w-[13px]' />
-                    <img alt='star' src='/assets/images/white-star.svg' className='absolute  top-[45%] right-[5%] sm:max-w-[21px] max-w-[13px]' />
-                    <img alt='star' src='/assets/images/white-star.svg' className='absolute  bottom-[5%] left-[15%] sm:max-w-[18px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/white-star.svg' className='absolute  bottom-[5%] right-[15%] sm:max-w-[18px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute star  top-[5%] left-[15%] sm:max-w-[18px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/white-star.svg' className='absolute star  top-[45%] left-[45%] sm:max-w-[21px] max-w-[13px]' />
+                    <img alt='star' src='/assets/images/white-star.svg' className='absolute star  top-[45%] right-[5%] sm:max-w-[21px] max-w-[13px]' />
+                    <img alt='star' src='/assets/images/white-star.svg' className='absolute star  bottom-[5%] left-[15%] sm:max-w-[18px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/white-star.svg' className='absolute star  bottom-[5%] right-[15%] sm:max-w-[18px] max-w-[12px]' />
 
                 </section>
             </Fade>
@@ -407,9 +407,9 @@ function Home() {
                         </div>
                     </Slide>
 
-                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute  top-[22%] left-[15%] sm:max-w-[18px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute  top-[40%] left-[55%] sm:max-w-[18px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/white-star.svg' className='absolute  bottom-[15%] left-[55%] sm:max-w-[21px] max-w-[13px]' />
+                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute star  top-[22%] left-[15%] sm:max-w-[18px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute star  top-[40%] left-[55%] sm:max-w-[18px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/white-star.svg' className='absolute star  bottom-[15%] left-[55%] sm:max-w-[21px] max-w-[13px]' />
 
                 </section>
             </Fade>
@@ -461,19 +461,19 @@ function Home() {
 
                     <div className='sm:absolute right-0 top-[15%] relative max-[620px]:mt-[100px]'>
                         <Slide direction='down'>
-                            <img alt='privacy lock' src='/assets/images/privacy.svg' className='sm:min-w-[559px] z-[2] relative' />
+                            <img alt='privacy lock' src='/assets/images/privacy.png' className='sm:max-w-[559px] z-[4] relative' />
                         </Slide>
-                        <img alt='privacy' src='/assets/images/privacy-watermark.svg' className='sm:min-w-[530px] absolute top-[-15%]' />
+                        <img alt='privacy' src='/assets/images/privacy-watermark.svg' className='sm:min-w-[530px] absolute z-[-2] top-[-15%]' />
 
                     </div>
 
 
-                    <img alt='star' src='/assets/images/gray-star.svg' className='absolute  top-[15%] left-[30%] sm:max-w-[18px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute  top-[25%] left-[55%] sm:max-w-[18px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute  bottom-[25%] left-[5%] sm:max-w-[21px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/white-star.svg' className='absolute  bottom-[38%] left-[68%] sm:max-w-[18px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute  bottom-[48%] left-[73%] sm:max-w-[18px] max-w-[12px]' />
-                    <img alt='star' src='/assets/images/gray-star.svg' className='absolute  bottom-[10%] right-[10%] sm:max-w-[18px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/gray-star.svg' className='absolute star  top-[15%] left-[30%] sm:max-w-[18px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute star  top-[25%] left-[55%] sm:max-w-[18px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute star  bottom-[25%] left-[5%] sm:max-w-[21px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/white-star.svg' className='absolute star  bottom-[38%] left-[68%] sm:max-w-[18px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/purple-star.svg' className='absolute star  bottom-[48%] left-[73%] sm:max-w-[18px] max-w-[12px]' />
+                    <img alt='star' src='/assets/images/gray-star.svg' className='absolute star  bottom-[10%] right-[10%] sm:max-w-[18px] max-w-[12px]' />
 
                 </section>
             </Fade>
@@ -538,11 +538,11 @@ function Home() {
 
                 <p className='mt-[59px] text-[12px] text-[#fff] text-center'>All rights reserved. © getlinked Ltd.</p>
 
-                <img alt='star' src='/assets/images/white-star.svg' className='absolute  top-[25%] left-[5%] sm:max-w-[18px] max-w-[10px]' />
-                <img alt='star' src='/assets/images/gray-star.svg' className='absolute  top-[25%] right-[26%] sm:max-w-[18px] max-w-[10px]' />
-                <img alt='star' src='/assets/images/white-star.svg' className='absolute  bottom-[32%] right-[4%] sm:max-w-[18px] max-w-[10px]' />
+                <img alt='star' src='/assets/images/white-star.svg' className='absolute star  top-[25%] left-[5%] sm:max-w-[18px] max-w-[10px]' />
+                <img alt='star' src='/assets/images/gray-star.svg' className='absolute star  top-[25%] right-[26%] sm:max-w-[18px] max-w-[10px]' />
+                <img alt='star' src='/assets/images/white-star.svg' className='absolute star  bottom-[32%] right-[4%] sm:max-w-[18px] max-w-[10px]' />
 
-                <img alt='star' src='/assets/images/purple-star.svg' className='absolute  bottom-[28%] left-[45%] sm:max-w-[18px] max-w-[10px]' />
+                <img alt='star' src='/assets/images/purple-star.svg' className='absolute star  bottom-[28%] left-[45%] sm:max-w-[18px] max-w-[10px]' />
 
             </footer>
         </div>

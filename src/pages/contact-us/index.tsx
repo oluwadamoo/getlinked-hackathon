@@ -36,7 +36,7 @@ function ContactUs() {
         }
     }
     return (
-        <div className='px-[8.47%] overflow-x-hidden overflow-y-scroll min-h-[calc(100vh-100px)] z-[10] relative  sm:py-[140px] py-[100px]'>
+        <div className='px-[8.47%] overflow-x-hidden overflow-y-scroll min-h-[calc(100vh-100px)] z-[10] relative  sm:py-[140px] py-[100px] sm:pb-[200px]'>
             <div className='flex text-[#fff] text-[16px] justify-between'>
                 <Slide direction='down'>
                     <div className='max-[620px]:hidden'>
@@ -122,6 +122,13 @@ function ContactUs() {
                     </div>
                 </form>
             </div>
+
+
+            <img alt='star' src='/assets/images/purple-star.svg' className=' absolute star  top-[5%] left-[8%] sm:max-w-[18px] max-w-[10px]' />
+            <img alt='star' src='/assets/images/gray-star.svg' className=' absolute star  top-[3%] right-[11%] sm:max-w-[18px] max-w-[10px]' />
+            <img alt='star' src='/assets/images/white-star.svg' className=' absolute star  bottom-[17%] right-[5%] sm:max-w-[18px] max-w-[10px]' />
+
+            <img alt='star' src='/assets/images/purple-star.svg' className=' absolute star  bottom-[28%] left-[49%] sm:max-w-[18px] max-w-[10px]' />
 
         </div>
     )

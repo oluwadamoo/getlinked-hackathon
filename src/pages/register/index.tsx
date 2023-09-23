@@ -73,10 +73,17 @@ function Register() {
     })
     return (
         <>
-            <div className='sm:px-[8.47%] px-[10%] overflow-x-hidden overflow-y-scroll min-h-[calc(100vh-100px)] z-[8] relative  sm:pt-[140px] pt-[40px]'>
+            <div className='sm:px-[8.47%] px-[10%] overflow-x-hidden overflow-y-scroll min-h-[calc(100vh-100px)] z-[8] relative  sm:pt-[140px] pt-[40px] pb-[150px]'>
                 <h6 className='block sm:hidden text-[#D434FE] font-[700] text-[15px] clash-text mb-[36px]'>Register</h6>
 
-                <div className='flex text-[#fff] text-[16px] justify-between sm:flex-row flex-col'>
+                <img alt='star' src='/assets/images/purple-star.svg' className=' absolute star  top-[17%] left-[12%] sm:max-w-[18px] max-w-[10px]' />
+                <img alt='star' src='/assets/images/gray-star.svg' className=' absolute star  top-[17%] right-[23%] sm:max-w-[18px] max-w-[10px]' />
+                <img alt='star' src='/assets/images/white-star.svg' className=' absolute star  bottom-[5%] right-[18%] sm:max-w-[18px] max-w-[10px]' />
+
+                <img alt='star' src='/assets/images/purple-star.svg' className=' absolute star  bottom-[28%] left-[40%] sm:max-w-[18px] max-w-[10px]' />
+                <img alt='star' src='/assets/images/gray-star.svg' className=' absolute star  bottom-[18%] left-[13%] sm:max-w-[18px] max-w-[10px]' />
+
+                <div className='z-[2] flex text-[#fff] text-[16px] justify-between sm:flex-row flex-col'>
                     <div>
                         <img alt='3d graphic designer' src='/assets/images/g-inside-room.svg' className='sm:ml-[-50px] sm:min-w-[650px]' />
                     </div>
@@ -206,6 +213,8 @@ function Register() {
                         />
                     </form>
                 </div>
+
+
 
 
             </div>

@@ -59,7 +59,6 @@ a:hover {
   width: 120%;
   height: 0.1em;
   background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
-  /* background-color: #D434FE; */
   animation: move 0.5s linear
 }
 
@@ -259,5 +258,21 @@ select {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+
+.star {
+  animation: glowing 2s infinite;
+
+}
+
+@keyframes glowing {
+  from {
+    filter: drop-shadow(0 0 10px #fff);
+  }
+
+  to {
+    filter: drop-shadow(0 0 30px #fff);
   }
 }
