@@ -76,9 +76,9 @@ function Home() {
     };
 
     return (
-        <div className='overflow-x-hidden overflow-y-scroll min-h-[calc(100vh-100px)] relative  pt-[32px]'>
+        <div className=' overflow-x-hidden overflow-y-scroll min-h-[calc(100vh-100px)] relative  pt-[32px]'>
 
-            <div className='pl-[8.47%] pr-[3.64%] relative'>
+            <div className=' pl-[8.47%] pr-[3.64%] relative'>
                 <section className='z-[10] relative max-[620px]:w-fit'>
                     <h3 className='italic text-[#fff] sm:text-[36px] text-[16px] font-[700] sm:text-right '>Igniting a Revolution in HR Innovation</h3>
                     <img src='/assets/images/arc.svg' alt='arc' className='absolute right-0 max-[620px]:max-w-[115px] ' loading='lazy' />
@@ -131,7 +131,7 @@ function Home() {
                     <img alt='star' src='/assets/images/gray-star.svg' className='absolute  bottom-[15%] left-[35%] sm:max-w-[21px] max-w-[12px]' />
                 </section>
             </div>
-            <section className='z-[5] pt-[62px] pb-[78px] sm:pl-[8.47%] sm:pr-[3.64%] max-[620px]:px-[8.47%] border-[1px] border-[#FFFFFF2E] sm:mt-[91px] mt-[400px] flex sm:flex-row flex-col justify-between items-center relative'>
+            <section className=' z-[5] pt-[62px] pb-[78px] sm:pl-[8.47%] sm:pr-[3.64%] max-[620px]:px-[8.47%] border-[1px] border-[#FFFFFF2E] sm:mt-[91px] mt-[400px] flex sm:flex-row flex-col justify-between items-center relative'>
                 <div className='relative'>
                     <img alt='light-bulb' src='/assets/images/big-idea.svg' className='sm:min-w-[490px]' loading='lazy' />
                     <img alt='arrow' src='/assets/images/curled-arrow.svg' className='absolute bottom-0 right-0' loading='lazy' />
@@ -164,7 +164,7 @@ function Home() {
 
             {/* Rules */}
             <Fade>
-                <section className='relative z-[5] pt-[62px] pb-[78px] sm:pl-[8.47%] sm:pr-[3.64%] max-[620px]:px-[8.47%]  sm:h-[590px]  border-b-[1px] border-b-[#FFFFFF2E] flex sm:flex-row flex-col-reverse justify-between items-center'>
+                <section className=' relative z-[5] pt-[62px] pb-[78px] sm:pl-[8.47%] sm:pr-[3.64%] max-[620px]:px-[8.47%]  sm:h-[590px]  border-b-[1px] border-b-[#FFFFFF2E] flex sm:flex-row flex-col-reverse justify-between items-center'>
 
                     <div className='text-[#fff] sm:max-w-[50%]'>
                         <div className='flex'>
@@ -236,7 +236,7 @@ function Home() {
             {/* FAQ */}
             <div id='faq' />
             <Slide triggerOnce={false} direction='right'>
-                <section className='relative sm:pt-[80px] pt-[62px] pb-[78px]  sm:pl-[8.47%] sm:pr-[3.64%] max-[620px]:px-[8.47%]  border-b-[1px] border-b-[#FFFFFF2E] flex sm:flex-row flex-col justify-between items-center'>
+                <section className=' relative sm:pt-[80px] pt-[62px] pb-[78px]  sm:pl-[8.47%] sm:pr-[3.64%] max-[620px]:px-[8.47%]  border-b-[1px] border-b-[#FFFFFF2E] flex sm:flex-row flex-col justify-between items-center'>
 
                     <div className='text-[#fff] sm:max-w-[50%]'>
                         <div className='flex mb-[68px]'>
@@ -297,7 +297,7 @@ function Home() {
             <div id='timeline' />
 
             <Fade duration={2000}>
-                <section id='timeline' className='relative pt-[62px] pb-[78px]  sm:pl-[8.47%] sm:pr-[3.64%] max-[620px]:px-[8.47%]  border-b-[1px] border-b-[#FFFFFF2E]  justify-between items-center'>
+                <section id='timeline' className=' relative pt-[62px] pb-[78px]  sm:pl-[8.47%] sm:pr-[3.64%] max-[620px]:px-[8.47%]  border-b-[1px] border-b-[#FFFFFF2E]  justify-between items-center'>
                     <div className='text-[#fff] text-center flex flex-col items-center'>
                         <h5 className='sm:text-[32px] text-[20px] max-[620px]:text-center font-[700] clash-text'>Timeline</h5>
                         <p className='sm:text-[14px] text-[13px] max-[620px]:text-center  mt-[12px] max-w-[346px]'>
@@ -342,7 +342,7 @@ function Home() {
 
             {/* REWARDS */}
             <Fade>
-                <section className='rewards-bg pt-[62px] pb-[78px] sm:pl-[8.47%] sm:pr-[3.64%] max-[620px]:px-[8.47%] border-b-[1px] border-b-[#FFFFFF2E] relative'>
+                <section className=' rewards-bg pt-[62px] pb-[78px] sm:pl-[8.47%] sm:pr-[3.64%] max-[620px]:px-[8.47%] border-b-[1px] border-b-[#FFFFFF2E] relative'>
                     <div className='text-[#fff] flex flex-col items-center sm:mb-[180px] mb-[40px]'>
                         <div className='sm:w-[400px]'>
                             <h5 className='sm:text-[32px] text-[20px] font-[700] max-[620px]:text-center clash-text'>Prizes and</h5>
@@ -378,7 +378,7 @@ function Home() {
 
             {/* Partners */}
             <Fade>
-                <section className='relative pt-[62px] pb-[78px] sm:pl-[8.47%] sm:pr-[3.64%] max-[620px]:px-[8.47%] border-b-[1px] border-b-[#FFFFFF2E]'>
+                <section className=' relative pt-[62px] pb-[78px] sm:pl-[8.47%] sm:pr-[3.64%] max-[620px]:px-[8.47%] border-b-[1px] border-b-[#FFFFFF2E]'>
                     <div className='text-[#fff] text-center flex flex-col items-center'>
                         <h5 className='sm:text-[32px] text-[20px] font-[700] clash-text max-[620px]:text-center'>Partners and Sponsors</h5>
                         <p className=' text-[12px] sm:text-[14px]  mt-[12px] max-w-[346px] max-[620px]:text-center'>
@@ -479,7 +479,7 @@ function Home() {
             </Fade>
 
             {/* Footer */}
-            <footer className='px-[8.47%] py-[83px] relative'>
+            <footer className=' px-[8.47%] py-[83px] relative'>
                 <div className='flex sm:flex-row flex-col text-[#fff] justify-between'>
                     <section>
                         <Logo />
