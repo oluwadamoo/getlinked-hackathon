@@ -85,7 +85,7 @@ function Register() {
 
                 <div className='z-[2] flex text-[#fff] text-[16px] justify-between sm:flex-row flex-col'>
                     <div>
-                        <img alt='3d graphic designer' src='/assets/images/g-inside-room.svg' className='sm:ml-[-50px] sm:min-w-[650px]' />
+                        <img alt='3d graphic designer' src='/assets/images/g-inside-room.svg' className='sm:ml-[-50px] sm:min-w-[650px]' loading='eager' />
                     </div>
 
                     {/* FORM */}

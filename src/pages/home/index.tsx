@@ -81,7 +81,7 @@ function Home() {
             <div className=' pl-[8.47%] pr-[3.64%] relative'>
                 <section className='z-[10] relative max-[620px]:w-fit'>
                     <h3 className='italic text-[#fff] sm:text-[36px] text-[16px] font-[700] sm:text-right '>Igniting a Revolution in HR Innovation</h3>
-                    <img src='/assets/images/arc.svg' alt='arc' className='absolute right-0 max-[620px]:max-w-[115px] ' loading='lazy' />
+                    <img src='/assets/images/arc.svg' alt='arc' className='absolute right-0 max-[620px]:max-w-[115px] ' loading='eager' />
                 </section>
 
                 <section className='flex mt-[40px] sm:flex-row flex-col relative z-[6]'>
@@ -121,8 +121,8 @@ function Home() {
                         </div>
                     </div>
                     <div className='sm:absolute z-[4] flex-1 right-0 sm:mt-[0px] mt-[16.84px]'>
-                        <img src='/assets/images/smart-glasses-guy.png' alt='man-in-glasses' className='sm:max-w-[740px] absolute right-[0]' loading='lazy' />
-                        <img src='/assets/images/light.png' alt='3d' className='light z-[10] absolute sm:min-w-[660px] right-0' loading='lazy' />
+                        <img src='/assets/images/smart-glasses-guy.png' alt='man-in-glasses' className='sm:max-w-[740px] absolute right-[0]' loading='eager' />
+                        <img src='/assets/images/light.png' alt='3d' className='light z-[10] absolute sm:min-w-[660px] right-0' loading='eager' />
 
                     </div>
 
