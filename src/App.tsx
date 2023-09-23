@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import BrightLight from './components/BrightLight';
 import Navbar from './components/Navbar';
 import Home from './pages/home';
 import { Route, Routes } from 'react-router-dom';
@@ -10,7 +9,6 @@ import axios from 'axios';
 import { BASEURL } from './constants/api';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
-import Overview from './pages/overview';
 
 function App() {
 
@@ -60,7 +58,7 @@ function App() {
   }, [])
 
   return (
-    <div className="app overflow-x-hidden">
+    <div className="bright-light app overflow-x-hidden relative">
       <ToastContainer
         position="top-right"
         autoClose={3000}
@@ -79,12 +77,10 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/register' element={<Register />} />
           <Route path='/contact' element={<ContactUs />} />
-          <Route path='/overview' element={<Overview />} />
           <Route path='*' element={<Blank />} />
         </Routes>
 
       </div>
-      <BrightLight className='w-[100.83%] h-[836px] absolute top-[0px]' />
 
 
     </div>
