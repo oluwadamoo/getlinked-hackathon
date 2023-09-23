@@ -104,6 +104,7 @@ function ContactUs() {
 
                     <RegisterButton
                         title={isSubmitting ? 'Please wait' : 'Submit'}
+                        loading={isSubmitting}
                         className={`self-center mt-[31px] ${isSubmitting ? 'btn-disabled' : ''}`}
                         onClick={() => console.log("")}
                     />

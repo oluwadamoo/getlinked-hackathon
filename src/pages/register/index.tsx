@@ -49,7 +49,7 @@ function Register() {
             setPolicyAccepted(false)
         } catch (error: any) {
             setIsSubmitting(false)
-            toast.error(error?.response?.data ? error?.response?.data.email[0] : error?.message ? error.message : 'An Error Occurred\nTry again')
+            toast.error(error?.response?.data?.email ? error?.response?.data?.email[0] : error?.message ? error.message : 'An Error Occurred\nTry again')
         }
     }
     useEffect(() => {
@@ -70,7 +70,7 @@ function Register() {
         return () => {
             controller.abort()
         }
-    })
+    }, [])
     return (
         <>
             <div className='sm:px-[8.47%] px-[10%] overflow-x-hidden overflow-y-scroll min-h-[calc(100vh-100px)] z-[8] relative  sm:pt-[140px] pt-[40px] pb-[150px]'>
